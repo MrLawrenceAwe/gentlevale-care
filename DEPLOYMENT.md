@@ -23,9 +23,7 @@ In GitHub repo settings:
 1. Go to **Settings** -> **Secrets and variables** -> **Actions**.
 2. Add secrets:
    - `CLOUDFLARE_API_TOKEN`: the token you created above
-   - `CLOUDFLARE_ACCOUNT_ID`: your Cloudflare account id (it appears in the dashboard URL as `dash.cloudflare.com/<account_id>/...`)
 
 ### 3) Deploy
 
 Push to `main` and the workflow will deploy automatically.
-

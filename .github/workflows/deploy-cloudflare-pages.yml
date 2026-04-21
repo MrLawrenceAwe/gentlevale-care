@@ -29,6 +29,7 @@ jobs:
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # Cloudflare account id (from dash.cloudflare.com/<account_id>/...)
+          accountId: 7caebaf25bf9bfc1a1904b82be15ad7c
           projectName: gentlevale-care
           directory: .deploy
