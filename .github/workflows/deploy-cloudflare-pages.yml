@@ -20,10 +20,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Prepare deploy directory
+        run: |
+          mkdir -p .deploy
+          cp index.html styles.css script.js favicon.svg robots.txt sitemap.xml .deploy/
+
       - name: Deploy
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           projectName: gentlevale-care
-          directory: .
+          directory: .deploy
