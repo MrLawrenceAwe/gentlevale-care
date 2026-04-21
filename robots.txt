@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mrlawrenceawe.github.io/gentlevale-care/sitemap.xml
-
+Sitemap: https://gentlevale-care.pages.dev/sitemap.xml
