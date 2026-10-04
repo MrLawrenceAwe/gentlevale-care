@@ -2,6 +2,10 @@
 
 A static marketing website for GentleVale, a domiciliary care service based in Welwyn Garden City.
 
+## Portfolio overview
+
+A responsive HTML/CSS/JavaScript site with service information, contact navigation, search metadata and automated static-site deployment. This repository demonstrates small-business website implementation and deployment configuration.
+
 ## Features
 
 - Responsive single-page site.
