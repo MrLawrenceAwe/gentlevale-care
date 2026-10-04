@@ -4,7 +4,7 @@ This site is deployed to Cloudflare Pages.
 
 ## Automatic Deploys (GitHub Actions)
 
-This repo includes a GitHub Actions workflow that can deploy to the existing Cloudflare Pages project on every push to `main`.
+This repo uses the official `cloudflare/wrangler-action@v4` to deploy to the existing Cloudflare Pages project on every push to `main`.
 
 ### 1) Create a Cloudflare API token
 
@@ -26,4 +26,4 @@ In GitHub repo settings:
 
 ### 3) Deploy
 
-Push to `main` and the workflow will deploy automatically.
+Push to `main` and the workflow will deploy automatically. The workflow copies the static site into `.deploy/` and runs `wrangler pages deploy` against the existing `gentlevale-care` project.
